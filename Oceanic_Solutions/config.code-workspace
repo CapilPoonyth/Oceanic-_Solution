@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "others/Icons"
+		},
+		{
+			"path": "others/images"
+		},
+		{
+			"path": "others/Logos"
+		},
+		{
+			"path": "others/marine animals"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oceanic Solutions website"
+	}
+}

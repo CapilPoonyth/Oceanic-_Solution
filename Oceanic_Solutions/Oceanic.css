@@ -1,0 +1,385 @@
+/*======================= google fonts===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:ital,wght@0,400;1,900&display=swap');
+
+/*==========================font and typography==============*/
+:root {
+  --header-height: 3rem;
+
+  /*-------colors for website------*/
+
+  /*==========================font and typography==============*/
+  --font-family: 'Inter', sans-serif;
+  /*--font-family: 'Montserrat', sans-serif;*/
+
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*----font weight----*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-style: normal;
+
+  /*====================================margins bottom===================*/
+
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*======================================Z index========================*/
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*==================base=============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  background-image: url("front page sea.jpg");
+  background-size:auto;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==============================reusable css===================*/
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+/*========================layout========================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*====================================BG image========================*/
+#myDiv {
+  background-image: url("front page sea.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*=====================================HEADER AND NAV===========================*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 41px 0;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%; /* Adjust the width to fit the container */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  margin-right: 2px;
+  padding-right: 2rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+}
+
+.nav-menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* Increase the height for a bolder underline */
+  background-color: #48CAE4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav__menu{
+  font-size: 40px;
+  cursor: pointer;
+
+}
+
+.nav__menu:hover{
+  color: #48CAE4;
+}
+
+/*=========================== Oceanic logo=======(Bisin get sa 1 kout)
+.oceanic__logo {
+  width: 397px;
+  height: 194px;
+  position: absolute;
+  top: 1px;  Adjust the top position to match the padding 
+  left: 0;
+  z-index: 200; Set a higher z-index to bring it in front 
+}
+
+.logo {
+  width: 397px;
+  height: 194px;
+  
+   Add any additional styling for the logo 
+}*/
+
+
+/*=====================================text=====================*/
+.text {
+  display: flex;
+  width: 595px;
+  height: 194px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 80px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-left: 5rem;
+  margin-top: 107px;
+}
+
+.wave{
+  display: flex;
+  width: auto;
+  height: 78px;
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 5rem;
+}
+
+/*=============================== BUTTON NAV============================*/
+#navigation-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #48CAE4;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: fixed;
+  top: 30%;
+  right: 2%;
+  margin-right: 5%;
+  transform: translateY(-50%);
+  
+}
+
+#navigation-button.white {
+  /*background-color: white;*/
+  background-color: #48CAE4;
+  color: #48CAE4;
+}
+
+
+
+
+/*=============================AWARENESS SECTION========================*/
+
+.ocean__awareness{
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  padding-left: 5rem;
+
+}
+
+.awareness{
+  
+  width: 737px;
+  height: 640px;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 5rem;
+  
+}
+
+.scroll{
+  display: flex;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 5rem;
+    align-items: center;
+  
+
+  
+}
+.wave__img{
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+
+}
+
+.impact {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: 13.3125rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+ margin-left: auto;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: right;
+  right: 2%;
+}
+
+/*=====================================our mission=============================*/
+.mission__title{
+  width: auto;
+  height: 194px;
+  color: #000;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-left: 5rem;
+  
+}
+
+.mission__description{
+  margin-bottom: var(--mb-1);
+  width: 51.625rem;
+  height: 38.125rem;
+  flex-shrink: 0;
+  padding-left: 5rem;
+ color: #000;
+ font-family: Inter;
+ font-size: 2rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+.mission__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mission__img {
+  width: 539px;
+  height: auto;
+  margin-left: auto;
+}
+
+
+
