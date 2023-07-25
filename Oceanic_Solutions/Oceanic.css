@@ -191,7 +191,6 @@ nav {
 .nav__menu{
   font-size: 40px;
   cursor: pointer;
-
 }
 
 .nav__menu:hover{
@@ -260,8 +259,7 @@ nav {
   top: 30%;
   right: 2%;
   margin-right: 5%;
-  transform: translateY(-50%);
-  
+  transform: translateY(-50%); 
 }
 
 #navigation-button.white {
@@ -282,7 +280,6 @@ nav {
   text-transform: uppercase;
   flex-shrink: 0;
   padding-left: 5rem;
-
 }
 
 .awareness{
@@ -297,7 +294,7 @@ nav {
   line-height: normal;
   text-transform: uppercase;
   padding-left: 5rem;
-  
+  margin-top: 400px;
 }
 
 .scroll{
@@ -309,16 +306,15 @@ nav {
   line-height: normal;
   text-transform: uppercase;
   padding-left: 5rem;
-    align-items: center;
-  
-
-  
+  align-items: center;
+  text-align: left;
+  margin-left: 4px;
+  margin-bottom: -190px;
 }
 .wave__img{
   width: 20px;
   height: auto;
   margin-left: 5px;
-
 }
 
 .impact {
@@ -334,11 +330,11 @@ nav {
   line-height: normal;
   text-transform: uppercase;
   text-align: left;
- margin-left: auto;
+  margin-left: 786px;
+  margin-right: -371px;
+  text-align: left;
   flex-direction: row;
   flex-shrink: 0;
-  align-items: right;
-  right: 2%;
 }
 
 /*=====================================our mission=============================*/
@@ -352,12 +348,11 @@ nav {
   font-weight: 900;
   line-height: normal;
   padding-left: 5rem;
-  
 }
 
 .mission__description{
   margin-bottom: var(--mb-1);
-  width: 51.625rem;
+  width: 57.625rem;
   height: 38.125rem;
   flex-shrink: 0;
   padding-left: 5rem;
@@ -376,9 +371,52 @@ nav {
 }
 
 .mission__img {
-  width: 539px;
+  width: 552px;
   height: auto;
   margin-left: auto;
+  margin-top: -326px;
+}
+
+.mission__data{
+  margin-top: 943px;
+}
+/*===================================how we help===============================*/
+
+.help__data{
+  margin-top: 1000px;
+}
+
+.help__title{
+  width: auto;
+  height: 194px;
+  color: #000;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-left: 5rem;
+}
+
+.help__description{
+  margin-bottom: var(--mb-1);
+  width: 57.625rem;
+  height: 38.125rem;
+  flex-shrink: 0;
+  padding-left: 5rem;
+ color: #000;
+ font-family: Inter;
+ font-size: 2rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+.help__img {
+  width: 552px;
+  height: auto;
+  margin-left: 3px;
+  margin-top: -3285px;
 }
 
 
