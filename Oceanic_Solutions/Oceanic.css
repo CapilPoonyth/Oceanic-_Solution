@@ -269,19 +269,7 @@ nav {
 }
 
 
-
-
 /*=============================AWARENESS SECTION========================*/
-
-.ocean__awareness{
-  font-family: Inter;
-  font-style: normal;
-  line-height: normal;
-  text-transform: uppercase;
-  flex-shrink: 0;
-  padding-left: 5rem;
-}
-
 .awareness{
   
   width: 737px;
@@ -320,6 +308,7 @@ nav {
 .impact {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
   width: auto;
   height: 13.3125rem;
   color: #000;
@@ -331,13 +320,16 @@ nav {
   text-transform: uppercase;
   text-align: left;
   margin-left: 786px;
-  margin-right: -371px;
   text-align: left;
   flex-direction: row;
   flex-shrink: 0;
 }
 
 /*=====================================our mission=============================*/
+.mission__data{
+  margin-top: 943px;
+}
+
 .mission__title{
   width: auto;
   height: 194px;
@@ -375,16 +367,18 @@ nav {
   height: auto;
   margin-left: auto;
   margin-top: -326px;
+
+
 }
 
-.mission__data{
-  margin-top: 943px;
-}
+
+
 /*===================================how we help===============================*/
 
 .help__data{
-  margin-top: 1000px;
+  margin-top: -31px;
 }
+
 
 .help__title{
   width: auto;
@@ -412,12 +406,149 @@ nav {
  line-height: normal;
 }
 
+.help__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .help__img {
   width: 552px;
   height: auto;
-  margin-left: 3px;
-  margin-top: -3285px;
+  margin-left: auto;
+  margin-top: -326px;
 }
+
+/*===================================how we help 2==============================*/
+
+.help2__data{
+  margin-top: -31px;
+}
+
+
+.help2__title{
+  width: auto;
+  height: 194px;
+  color: #000;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-left: 5rem;
+}
+
+.help2__description{
+  margin-bottom: var(--mb-1);
+  width: 57.625rem;
+  height: 38.125rem;
+  flex-shrink: 0;
+  padding-left: 5rem;
+ color: #000;
+ font-family: Inter;
+ font-size: 2rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+.help2__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.help2__img {
+  width: 552px;
+  height: auto;
+  margin-left: auto;
+  margin-top: -326px;
+}
+
+/*==========================================swipe css==================================*/
+.carousel-control-prev,
+.carousel-control-next :hover{
+  color: #00f7ff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  font-size: 60px;
+  margin-top: 360px;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  
+  font-size: 60px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+
+/*==========================================WHAT WE FIGHT FOR===========================*/
+
+.bio__text{
+  width: 1155px;
+  height: 291px;
+  flex-shrink: 0;
+  color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-items: center;
+text-align: center;
+margin-left: 170px;
+}
+
+.background-rect{
+  width: 1160px;
+  height: 641px;
+  flex-shrink: 0;
+  background: #88C8D2;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.rectangle-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 
 
